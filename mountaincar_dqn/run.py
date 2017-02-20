@@ -76,7 +76,7 @@ class RLAgent(object):
 
     self.gamma = 0.99 # discount rate
 
-    self.epsilon_max = 0.10
+    self.epsilon_max = 1.00
     self.epsilon_min = 0.05
     self.epsilon_decay_factor = 0.01
     self.epsilon_decay_count = 0
