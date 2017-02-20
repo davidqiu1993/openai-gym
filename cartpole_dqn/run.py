@@ -214,10 +214,10 @@ if __name__ == '__main__':
   PROBLEM        = 'CartPole-v0'
   SAVE_PATH      = './cartpole_v0_001.h5'
   SAVE_FREQ      = 100
-  LOAD_PATH      = None
+  LOAD_PATH      = None # './cartpole_v0_001.h5'
   MAX_EPISODES   = 10000
   MAX_TIMESTEPS  = 500
-  RENDER_EPISODE = 500
+  RENDER_EPISODE = None
   
   environment = Environment(PROBLEM, save=SAVE_PATH, save_freq=SAVE_FREQ, load=LOAD_PATH)
   environment.run(MAX_EPISODES, MAX_TIMESTEPS, render_episode=RENDER_EPISODE)
